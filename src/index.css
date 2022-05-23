@@ -1,10 +1,143 @@
+@font-face {
+  font-family: "QuattroBold";   /*Can be any text*/
+  src: local("Quattrocento-Bold"),
+    url("./fonts/Quattrocento-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "QuattroRegular";   /*Can be any text*/
+  src: local("Quattrocento-Regular"),
+    url("./fonts/Quattrocento-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InterRegular";   /*Can be any text*/
+  src: local("inter-Regular"),
+    url("./fonts/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InterMedium";   /*Can be any text*/
+  src: local("inter-Medium"),
+    url("./fonts/Inter-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InterBold";   /*Can be any text*/
+  src: local("inter-Bold"),
+    url("./fonts/Inter-Bold.ttf") format("truetype");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'QuattroRegular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: "InterBold";
+  color: #f2f2f2;
+}
+
+h5 {
+  color: #f2f2f2;
+  /* font-size: 15px; */
+  font-family: "InterBold";
+}
+
+p {
+  color: #f2f2f2;
+}
+
+section {
+  background-color: #212529;
+  height: 100vh;
+}
+
+.navSection{
+  padding-top: 1%;
+}
+
+/* Style the links inside the navigation bar */
+.navBar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "InterBold";
+}
+
+/* Change the color of links on hover */
+.navBar a:hover {
+  color: #FFB742;
+}
+
+/* Add a color to the active/current link */
+.navBar a.active {
+  color: #FFB742;
+}
+
+.navButton {
+  background-color: #FFB742;
+  color: black;
+  font-family: "InterBold";
+  border-radius: 50px;
+  border: none;
+  text-decoration: none;
+  width: 100px;
+  height: 40px;
+}
+
+.navButton p {
+  padding-top: 6px;
+  color: black;
+  font-size: 14px;
+}
+
+.homeSection {
+  text-align: center;
+  padding-top: 4%;
+}
+
+.homeSection img {
+  margin-top: -3%;
+}
+
+.homeCard {
+  flex-wrap: wrap;
+  margin-top: 3%;
+}
+
+.card-text {
+  font-size: 12px;
+  font-family: "InterBold";
+}
+
+.card-title {
+  font-size: 24px;
+  font-family: "InterBold";
+}
+
+.homeCardIcon {
+  align-self: center;
+}
+
+.homeCardIcon img {
+  width: 40%;
+}
+
+.orangeText {
+  color: #FFB742;
+}
+
+.orangeName {
+  color: #FFB742;
+
 }
 
 code {
