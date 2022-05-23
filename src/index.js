@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Home from './views/Home';
+import About from './views/About';
 import Navbar from './components/Navbar';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -11,7 +12,7 @@ root.render(
   <React.StrictMode>
     <Navbar/>
     <Home/>
-    {/* <App /> */}
+    <About/>
     
   </React.StrictMode>
 );

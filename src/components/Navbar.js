@@ -15,13 +15,13 @@ function Navbar(){
         </div>
         <div className="navBar">
             <a className="active" href="#home">Home</a>
-            <a href="#news">About</a>
+            <a href="#about">About</a>
             <a href="#contact">Skills</a>
             <a href="#about">Portfolio</a>
             <a href="#about">Contact</a>
         </div>
         <div>
-        <HireButton />
+        <HireButton width="100px" />
     </div>
         
     

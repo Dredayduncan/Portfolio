@@ -89,7 +89,7 @@ section {
   border-radius: 50px;
   border: none;
   text-decoration: none;
-  width: 100px;
+  /* width: 100px; */
   height: 40px;
 }
 
@@ -138,6 +138,10 @@ section {
 .orangeName {
   color: #FFB742;
 
+}
+
+#about {
+  padding-top: 12%;
 }
 
 code {
