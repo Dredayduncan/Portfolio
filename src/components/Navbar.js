@@ -16,9 +16,9 @@ function Navbar(){
         <div className="navBar">
             <a className="active" href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#contact">Skills</a>
-            <a href="#about">Portfolio</a>
-            <a href="#about">Contact</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </div>
         <div>
         <HireButton width="100px" />

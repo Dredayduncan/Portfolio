@@ -3,13 +3,13 @@ import LittleLabel from "../components/LittleLabel";
 import displayPicture from "../images/andrewtrans.png";
 
 function About(){
-    return <section id="about" className="aboutSection d-flex">
+    return <section id="about" className="aboutSection row">
 
-        <div style={{"margin-top": "-12%"}}>
+        <div className="col-sm" style={{"margin-top": "-12%"}}>
             <img src={displayPicture} width="800" alt=""/>
         </div>
     
-        <div>
+        <div className="col-sm">
             <LittleLabel text="WHO I AM"/>
             <h1>About Me</h1>
             <p>

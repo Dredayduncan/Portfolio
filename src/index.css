@@ -144,6 +144,26 @@ section {
   padding-top: 12%;
 }
 
+#skills {
+  padding-top: 15%;
+}
+
+#skills p{
+  margin-top: 3%;
+}
+
+#skills button{
+  margin-top: 8%;
+}
+
+#skills button p{
+  margin-top: 1%;
+}
+
+.skillsIcons{
+  height: 20%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
