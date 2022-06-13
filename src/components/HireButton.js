@@ -1,11 +1,22 @@
+import cv from "../images/AndrewDuncan.pdf";
+
 function HireButton(props){
     const buttonStyle = {
         "width": props.width
     };
 
-    return <button className="navButton" style={buttonStyle}>
-        <p>Hire Me</p>
-    </button>;  
+    if (props.text === "Hire Me"){
+        return <a href={cv} target="_blank" rel="noreferrer"><button className="navButton" style={buttonStyle}>
+            <p>{props.text}</p>
+        </button>
+        </a>
+    }
+
+    return <a href="https://github.com/Dredayduncan" target="_blank" rel="noreferrer"><button className="navButton" style={buttonStyle}>
+        <p>{props.text}</p>
+    </button>
+    </a>
+    ;  
 
 }
 

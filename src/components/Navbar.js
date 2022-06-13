@@ -9,7 +9,7 @@ import HireButton from "./HireButton";
  */
 function Navbar(){
     const background = {background: '#212529'};
-    return <div className="d-flex justify-content-around navSection" style={background}>
+    return <div id="home" className="d-flex justify-content-around navSection" style={background}>
         <div>
             <img src={logo} alt="" height="80"/>
         </div>
@@ -18,10 +18,10 @@ function Navbar(){
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#footer">Contact</a>
         </div>
         <div>
-        <HireButton width="100px" />
+        <HireButton text="Hire Me" width="100px" />
     </div>
         
     

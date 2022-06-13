@@ -16,10 +16,10 @@ function Home(){
 
             <img src={avatar} width="300" alt=""/>
             
-            <div className="homeCard d-flex justify-content-evenly">
+            <div className="homeCard row justify-content-evenly">
                 <HomeCards icon={experienceBadge} value="4" label="Years Of Experience"/>
                 <HomeCards icon={completedProjectsBadge} value="28" label="Completed Projects"/>
-                <HomeCards icon={completedProjectsBadge} value="28" label="Completed Projects"/>
+                <HomeCards icon={completedProjectsBadge} value="4" label="Satisfied Clients"/>
             </div>
             
             

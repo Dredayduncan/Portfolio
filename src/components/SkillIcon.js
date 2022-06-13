@@ -6,11 +6,11 @@ function SkillIcon(props){
         "padding-bottom": "2%", 
         "margin-bottom": "3%",
         "margin-right": "3%",
-        "padding-left": "3.3%"
+        "padding-left": "4%"
     }
 
-    return <div className="rounded col-sm" style={skillIconStyle}>
-        <img src={props.icon} width="38" alt="..." />
+    return <div className="skillIcon rounded col-sm" style={skillIconStyle}>
+        <img src={props.icon} width="48" alt="..." />
     </div>
 }
 

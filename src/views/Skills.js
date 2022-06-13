@@ -11,44 +11,51 @@ import sql from "../images/mysql.PNG";
 import java from "../images/java.svg";
 import php from "../images/php.png";
 import flutter from "../images/flutter.png";
-import react from "../images/react.png";
+// import react from "../images/react.png";
 
 
 function Skills(){
 
-    return <section className="row" id="skills">
-        <div className="col-sm" style={{"margin-left": "5%", "margin-right": "5%"}}>
-            <LittleLabel text="MY SKILLS"/>
-            <h1>What My Programming Skills Include?</h1>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
-            </p>
+    return <section id="skills">
+        <div className="container">
 
-            <HireButton width="150px" />
+            <div className="row">
+                <div className="col-lg-6" >
+                    <LittleLabel text="MY SKILLS"/>
+                    <h1>What My Programming Skills Include?</h1>
+                    <p>
+                    I am a hgihly versatile and adaptive individual who can work across divergent
+                    environments and with various techonologies, constantly learning and improving 
+                    on skill set. Having worked on mobile, web and back-end development, I have 
+                    a lot of experience with technologies such as Flutter, Python, Java, HTML, CSS,
+                    JavaScript, PHP, Figma, and Git.
+                    </p>
 
-        </div>
-        <div className="col-sm">
-            <div className="row col-md-10 skillsIcons" style={{"margin-top": "16%"}}>
-                <SkillIcon icon={html}/>
-                <SkillIcon icon={css}/>
-                <SkillIcon icon={javascript}/>
-                <SkillIcon icon={figma}/>
-                <SkillIcon icon={github}/>
-                <SkillIcon icon={python}/>
-                <SkillIcon icon={sql}/>
-                <SkillIcon icon={java}/>
-                <SkillIcon icon={php}/>
-                <SkillIcon icon={flutter}/>
-                <SkillIcon icon={react}/>
-                <SkillIcon icon={html}/>
+                    <HireButton text="Hire Me" width="150px" />
+
+                </div>
+                <div className="phone col-lg-6">
+                    <div className="row skillsIcons" style={{"margin-top": "16%", "margin-left": "15%"}}>
+                        <SkillIcon icon={html}/>
+                        <SkillIcon icon={css}/>
+                        <SkillIcon icon={javascript}/>
+                        <SkillIcon icon={figma}/>
+                        <SkillIcon icon={github}/>
+                        <SkillIcon icon={python}/>
+                        <SkillIcon icon={sql}/>
+                        <SkillIcon icon={java}/>
+                        <SkillIcon icon={php}/>
+                        <SkillIcon icon={flutter}/>
+                        
+                    </div>
+                </div>
             </div>
+
         </div>
         
         
-    </section>
+        
+    </section>;
 
 }
 

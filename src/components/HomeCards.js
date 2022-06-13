@@ -15,8 +15,8 @@ function HomeCards(props){
 
     const rightArrow = <FontAwesomeIcon icon={faAngleRight} style={rightArrowStyle} />;
 
-    return <div className="shadow row col-md-3 rounded" style={cardStyle}>
-    <div className="d-flex">
+    return <div className="d-flex shadow col-md-3 rounded" style={cardStyle}>
+    {/* <div className="d-flex"> */}
       <div className="col-md-4 homeCardIcon">
         <img src={icon} className="img-fluid" alt="..."></img>
       </div>
@@ -26,10 +26,10 @@ function HomeCards(props){
           <p className="card-text">{label}</p>
         </div>
       </div>
-      <div className="col-md-2">
+      <div className="right-arrow col-md-2">
         {rightArrow}
       </div>
-    </div>
+    {/* </div> */}
   </div>
 }
 

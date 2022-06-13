@@ -35,7 +35,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  overflow-x: hidden;
+  width:100%;
+  height:100%;
 }
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  width:100%;
+  height:100%;
+}
+
 
 h1 {
   font-family: "InterBold";
@@ -54,7 +66,7 @@ p {
 
 section {
   background-color: #212529;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .navSection{
@@ -145,7 +157,8 @@ section {
 }
 
 #skills {
-  padding-top: 15%;
+  /* height: 70vh; */
+  padding-top: 5%;
 }
 
 #skills p{
@@ -160,9 +173,131 @@ section {
   margin-top: 1%;
 }
 
-.skillsIcons{
-  height: 20%;
+.imageCard {
+  position: relative;
 }
+
+.imageCard img {
+  transition: .5s ease;
+  backface-visibility: hidden;
+  display: block;
+}
+
+.imageCard:hover img {
+  opacity: 0.3;
+}
+
+.imageCard:hover .middle {
+  opacity: 1;
+}
+
+.imageCard .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imageCard .middle .text {
+  color: white;
+  font-size: 24px;
+}
+
+#portfolio {
+  padding-top: 3%;
+  text-align: center;
+  height: 100%;
+}
+
+#portfolio .section-title {
+  margin: 0 auto;
+}
+
+#footer {
+  background: #1C1C1C;
+}
+
+#foot {
+  /* position: absolute; */
+  padding-top: 70px;
+  padding-bottom: 50px;
+  
+}
+
+.footer-contact p {
+  color: #D4D4D4;
+}
+
+.footer-contact .name {
+  color: #FFB742;
+  font-weight: bolder;
+  font-size: 35px;
+  margin-top: -15px;
+}
+
+.footer-links p {
+  color: #7B7B7B;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #7B7B7B;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 30px;
+  
+}
+
+.footer-links h5 {
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: #FFB742;
+}
+
+@media (max-width: 480px) {
+  .homeCard {
+    width: 80%;
+    
+  }
+
+  .homeCard div {
+    margin-right: -35%;
+    justify-content:space-around;
+    padding-right: 60px;
+    margin-bottom: 10px;
+  }
+
+  .right-arrow {
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+
+  .little {
+    width: 130px !important;
+  }
+
+  /* #skills .phone .row {
+    width: none;
+    max-width: 50%;
+  } */
+
+}
+
+/* @media (max-width: 768px) {
+  .text {
+    font-size: 16px;
+  }
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
