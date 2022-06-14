@@ -8,6 +8,7 @@ import ashesiCom from "../images/ashComHome.png";
 import goInside from "../images/goInside.png";
 import dreMail from "../images/DreMail.png";
 import HireButton from "../components/HireButton";
+import mySafeCampus from "../images/mySafeCampus.png";
 
 function Portfolio(){
     return <section id="portfolio">
@@ -58,7 +59,10 @@ function Portfolio(){
                             link="https://drive.google.com/file/d/178K8kJW4qouri9zyhusUz3fCfZ-PUlp_/view?usp=sharing" 
                             description="An outlook clone which possesses the functionalities of a typical email application."
                         />
-                        <SmallImageCard image={img} />
+                        <SmallImageCard 
+                            image={mySafeCampus} 
+                            description="A mobile application that allows Ashesi Students to report cases of sexual misconduct and contact emergency services."
+                        />
                     </div>
                     
                 </div>

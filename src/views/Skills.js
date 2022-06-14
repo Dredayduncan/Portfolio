@@ -35,7 +35,7 @@ function Skills(){
 
                 </div>
                 <div className="phone col-lg-6">
-                    <div className="row skillsIcons" style={{"margin-top": "16%", "margin-left": "15%"}}>
+                    <div id="skillRow" className="row skillsIcons" style={{"margin-top": "16%", "margin-left": "15%"}}>
                         <SkillIcon icon={html}/>
                         <SkillIcon icon={css}/>
                         <SkillIcon icon={javascript}/>
