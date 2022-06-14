@@ -1,7 +1,6 @@
 import LittleLabel from "../components/LittleLabel";
 import LongImageCard from "../components/LongImageCard";
 import SmallImageCard from "../components/SmallImageCard";
-import img from "../images/darkCloud.JPG";
 import asvie from "../images/mainScreen.png";
 import spearCapital from "../images/spearCapital.png";
 import ashesiCom from "../images/ashComHome.png";

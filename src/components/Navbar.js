@@ -22,7 +22,6 @@ function Navbar(){
     const displayMenu = event => {
         const menu = document.getElementsByClassName("navBar")[0];
         const menuIcon = document.getElementsByTagName("svg")[0];
-        const hireButton = document.getElementById("home").getElementsByClassName("navButton")[0];
         
         if (menuDisplay === false){
             menu.style.display = "block";
