@@ -24,7 +24,7 @@ function Skills(){
                     <LittleLabel text="MY SKILLS"/>
                     <h1>What My Programming Skills Include?</h1>
                     <p>
-                    I am a hgihly versatile and adaptive individual who can work across divergent
+                    I am a highly versatile and adaptive individual who can work across divergent
                     environments and with various techonologies, constantly learning and improving 
                     on skill set. Having worked on mobile, web and back-end development, I have 
                     a lot of experience with technologies such as Flutter, Python, Java, HTML, CSS,

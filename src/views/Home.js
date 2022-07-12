@@ -10,7 +10,7 @@ import avatar from "../images/andrewmemoji.png"
 function Home(){
     return  <section className="homeSection">
             <h5>Hey There, I Am <span className="orangeText"><u>Andrew Duncan</u></span> <span>👋🏽</span></h5>
-            <h1>Software Engineer & Back-End Developer</h1>
+            <h1>Software Engineer & Mobile Application Developer</h1>
              
             <p style={{"margin-top": "3%"}}>I love making the world easier and simpler one piece of code at a time.</p>
 
