@@ -405,6 +405,10 @@ section {
     flex-direction: column;
   }
 
+  .about-picture {
+    width: 300px !important;
+  }
+
   .about-body {
     width: 100%;
   }
@@ -500,7 +504,7 @@ section {
   }
 
   .about-info {
-    padding: 0 !important;
+    padding: 0;
   }
 
   .project-image {
