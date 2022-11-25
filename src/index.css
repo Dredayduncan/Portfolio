@@ -49,7 +49,7 @@ html {
 }
 
 
-h1 {
+h1, h3 {
   font-family: "InterBold";
   color: #f2f2f2;
 }
@@ -111,18 +111,11 @@ section {
   font-size: 14px;
 }
 
+/* ----------- HOME ------------ */
+
 .homeSection {
   text-align: center;
   padding-top: 4%;
-}
-
-.homeSection img {
-  margin-top: -3%;
-}
-
-.homeCard {
-  flex-wrap: wrap;
-  margin-top: 3%;
 }
 
 #home a svg {
@@ -141,14 +134,6 @@ section {
   font-family: "InterBold";
 }
 
-.homeCardIcon {
-  align-self: center;
-}
-
-.homeCardIcon img {
-  width: 40%;
-}
-
 .orangeText {
   color: #FFB742;
 }
@@ -157,6 +142,8 @@ section {
   color: #FFB742;
 
 }
+
+/* ----------- ABOUT ------------ */
 
 #about {
   padding-top: 12%;
@@ -177,6 +164,10 @@ section {
 
 #skills button p{
   margin-top: 1%;
+}
+
+.skillIcon {
+
 }
 
 .imageCard {
@@ -213,15 +204,21 @@ section {
   font-size: 24px;
 }
 
+/* ----------- PORTFOLIO ------------ */
+
 #portfolio {
   padding-top: 3%;
-  text-align: center;
-  height: 100%;
+  /* height: 100%; */
 }
 
+#portfolio h1 {
+  text-align: center;
+}
 #portfolio .section-title {
   margin: 0 auto;
 }
+
+/* ----------- FOOTER ------------ */
 
 #footer {
   background: #1C1C1C;
@@ -298,10 +295,6 @@ section {
     margin-bottom: 10px;
   }
 
-  .right-arrow {
-    margin-top: 40px;
-    margin-left: 30px;
-  }
 
   #skills {
     padding-top: 80px;

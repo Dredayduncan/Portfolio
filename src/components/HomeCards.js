@@ -1,32 +1,25 @@
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
 
 function HomeCards(props){
     const {icon, value, label} = props;
-    const cardStyle = {
-        "background": "#292B2E"
-    }
 
-    const rightArrowStyle = {
-      "color": "#ffffff",
-      "padding-top": "60%",
-      "font-size": "12px"
-    }
 
-    const rightArrow = <FontAwesomeIcon icon={faAngleRight} style={rightArrowStyle} />;
+    const rightArrow = <FontAwesomeIcon className='text-light' icon={faAngleRight} />;
 
-    return <div className="d-flex shadow col-md-3 rounded" style={cardStyle}>
-    {/* <div className="d-flex"> */}
-      <div className="col-md-4 homeCardIcon">
-        <img src={icon} className="img-fluid" alt="..."></img>
+    return <div className="d-flex justify-content-between shadow col-md-3 col-sm rounded p-3">
+   
+      <div className="d-flex align-items-center">
+        <img src={icon} width="50" alt="..."></img>
       </div>
-      <div className="col-md-6">
-        <div className="card-body align-middle">
+      <div className="d-flex align-items-center">
+        <div>
           <h5 className="card-title orangeText">{value}</h5>
-          <p className="card-text">{label}</p>
+          <p className="pt-2 card-text">{label}</p>
         </div>
       </div>
-      <div className="right-arrow col-md-2">
+      <div className="d-flex align-items-center">
         {rightArrow}
       </div>
     {/* </div> */}

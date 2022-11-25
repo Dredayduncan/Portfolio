@@ -1,16 +1,9 @@
-function SkillIcon(props){
-    const skillIconStyle = {
-        "background": "#383E45",
-        "box-sizing":"border-box", 
-        "padding-top": "3%", 
-        "padding-bottom": "2%", 
-        "margin-bottom": "3%",
-        "margin-right": "3%",
-        "padding-left": "4%"
-    }
+import React from 'react';
 
-    return <div className="skillIcon rounded col-sm" style={skillIconStyle}>
-        <img src={props.icon} width="48" alt="..." />
+function SkillIcon(props){
+
+    return <div className="d-flex justify-content-center skillIcon rounded col-sm">
+        <img src={props.icon} alt="..." />
     </div>
 }
 

@@ -1,4 +1,5 @@
-import logo from "../images/dredayLogo.png"
+import React from 'react';
+import logo from "../assets/images/dredayLogo.png"
 import HireButton from "./HireButton";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
@@ -43,7 +44,7 @@ function Navbar(){
     return <div id="home" className="d-flex justify-content-around navSection" style={background}>
         <div>
             <img src={logo} alt="" height="80"/>
-            <a href="#" className="icon" onClick={displayMenu}>
+            <a className="icon" onClick={displayMenu}>
                 {menuBar}
             </a>
         </div>

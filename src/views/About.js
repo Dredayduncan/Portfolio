@@ -1,6 +1,6 @@
-import HireButton from "../components/HireButton";
+import React from 'react';
 import LittleLabel from "../components/LittleLabel";
-import displayPicture from "../images/andrewtrans.png";
+import displayPicture from "../assets/images/andrewtrans.png";
 
 /**
  * It returns a section element with an id of "about" and a div element with a class of "container" and
@@ -10,33 +10,40 @@ import displayPicture from "../images/andrewtrans.png";
  * @returns A section with an id of about.
  */
 function About(){
-    return <section id="about">
-        <div className="container">
-            <div className="row justify-content-between">
+    return <section id="about" className='ps-5'>
+        
+            <div className="d-flex justify-content-center align-items-center h-100">
 
-                <img className="dp col-lg-6" src={displayPicture} width="700" style={{"margin-top": "-6%"}} alt=""/>
                 
-                <div className="col-lg-6 mt-5">
-                    {/* <div> */}
+                <div className='about-picture'>
+                    <img className='displayPicture' src={displayPicture} alt="image"/>
+                </div>
+
+                
+                
+                <div className='about-info'>
                     <LittleLabel text="WHO I AM"/>
-                    {/* </div> */}
+                    
+                    
                     
                     <h1>About Me</h1>
-                    <p>
+
+                    <p className='about-body'>
                         My name is Andrew Duncan. I am a Ghanaian Software Engineer, Back-End Developer, and Mobile
                         Application Developer. I have a Bachelor of Science in Computer Science at Ashesi
-                        University in Ghana. I have worked at ExpressPay Ghana Limited as a Data Engineer Intern
+                        University in Ghana. 
+                        <br></br>
+                        <br></br>
+                        I have worked at ExpressPay Ghana Limited as a Data Engineer Intern
                         where I built front-end representations of their data using Python, Dash by Plotly and Flask.
                         I have also been involved with the developments of websites and web applications for various 
-                        clients. I am a car enthusiast, basketball lover, and a huge fanatic of videography and photography. 
+                        clients.
+                        <br></br>
+                        <br></br>
+                         I am a car enthusiast, basketball lover, and a huge fanatic of videography and photography. 
                     </p>
-                    <HireButton text="Hire Me" width="150px"/>
                 </div>
             </div>
-
-        </div>
-
-        
         
     </section>;
 }

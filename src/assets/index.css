@@ -1,0 +1,517 @@
+@font-face {
+  font-family: "QuattroBold";   /*Can be any text*/
+  src: local("Quattrocento-Bold"),
+    url("./fonts/Quattrocento-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "QuattroRegular";   /*Can be any text*/
+  src: local("Quattrocento-Regular"),
+    url("./fonts/Quattrocento-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InterRegular";   /*Can be any text*/
+  src: local("inter-Regular"),
+    url("./fonts/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InterMedium";   /*Can be any text*/
+  src: local("inter-Medium"),
+    url("./fonts/Inter-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InterBold";   /*Can be any text*/
+  src: local("inter-Bold"),
+    url("./fonts/Inter-Bold.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: 'QuattroRegular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  overflow-x: hidden;
+  width:100%;
+  height:100%;
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  width:100%;
+  height:100%;
+}
+
+h1, h3 {
+  font-family: "InterBold";
+  color: #f2f2f2;
+}
+
+h5 {
+  color: #f2f2f2;
+  /* font-size: 15px; */
+  font-family: "InterBold";
+} 
+
+h6 {
+  margin: 0 !important;
+}
+
+p {
+  color: #f2f2f2;
+}
+
+section {
+  background-color: #212529;
+  padding-top: 12% !important;
+  /* height: 100vh; */
+}
+
+.navSection{
+  padding-top: 1%;
+}
+
+/* Style the links inside the navigation bar */
+.navBar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "InterBold";
+}
+
+/* Change the color of links on hover */
+.navBar a:hover {
+  color: #FFB742;
+}
+
+/* Add a color to the active/current link */
+.navBar a.active {
+  color: #FFB742;
+}
+
+.navButton {
+  background-color: #FFB742;
+  color: black;
+  font-family: "InterBold";
+  border-radius: 50px;
+  border: none;
+  text-decoration: none;
+  /* width: 100px; */
+  height: 40px;
+}
+
+.navButton p {
+  padding-top: 6px;
+  color: black;
+  font-size: 14px;
+}
+
+/* ----------- HOME ------------ */
+
+.homeSection {
+  text-align: center;
+  margin-top: -8%;
+}
+
+.homeSection img {
+  margin-top: -3%;
+}
+
+.avatar {
+  width: 25%;
+}
+
+
+#home a svg {
+  display: none;
+  color: #FFB742;
+  
+}
+
+.card-text {
+  font-size: 12px;
+  font-family: "InterBold";
+}
+
+.card-title {
+  font-size: 24px;
+  font-family: "InterBold";
+}
+
+/* ----------- ABOUT ------------ */
+
+.about-picture {
+  width: 1500px;
+  padding: 0 5%;
+
+}
+
+.displayPicture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-body {
+  width: 75%;
+}
+
+.about-info {
+  padding-left: 3em !important;
+}
+
+/* ----------- SKILLS ------------ */
+
+#skills {
+  /* height: 70vh; */
+  padding-top: 5%;
+}
+
+#skills p{
+  margin-top: 3%;
+}
+
+#skills button{
+  margin-top: 8%;
+}
+
+#skills button p{
+  margin-top: 1%;
+}
+
+.skills-body {
+  padding-left: 3rem !important;
+  margin-left: 3rem !important;
+}
+
+.skills-text {
+  width: 50%;
+}
+
+.skills-text-two {
+  width: 75%;
+}
+
+#skillRow {
+  margin-left: 3em !important;
+  padding-left: 3em !important;
+}
+
+.skillIcon {
+  background: #383E45;
+  width: 70px;
+  height: 70px;
+  margin: 0.5rem !important;
+}
+
+.skillIcon img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  padding: 12px;
+}
+
+.imageCard {
+  position: relative;
+}
+
+.imageCard img {
+  transition: .5s ease;
+  backface-visibility: hidden;
+  display: block;
+}
+
+.imageCard:hover img {
+  opacity: 0.3;
+}
+
+.imageCard:hover .middle {
+  opacity: 1;
+}
+
+.imageCard .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imageCard .middle .text {
+  color: white;
+  font-size: 24px;
+}
+
+/* ----------- PORTFOLIO ------------ */
+
+#portfolio {
+  padding-top: 3%;
+  /* height: 100%; */
+}
+
+#portfolio h1 {
+  text-align: center;
+}
+#portfolio .section-title {
+  margin: 0 auto;
+}
+
+.carousel-item {
+  margin: 0 auto;
+  height: 500px;
+}
+
+.carou-item {
+  padding: 0 5%;
+}
+
+.project-image {
+  width: 500px;
+}
+
+.portfolio-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+}
+
+/* ----------- FOOTER ------------ */
+
+#footer {
+  background: #1C1C1C;
+}
+
+#foot {
+  /* position: absolute; */
+  padding-top: 70px;
+  padding-bottom: 50px;
+  
+}
+
+.footer-contact p {
+  color: #D4D4D4;
+}
+
+.footer-contact .name {
+  color: #FFB742;
+  font-weight: bolder;
+  font-size: 35px;
+  margin-top: -15px;
+}
+
+.footer-links p {
+  color: #7B7B7B;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #7B7B7B;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 30px;
+  
+}
+
+.footer-links h5 {
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: #FFB742;
+}
+
+/* ------------ EXTRAS ---------------- */
+.little {
+  background: #383E45;
+  height: 30px;
+  width: 25% !important;
+}
+
+.little h6 {
+  font-family: InterMedium;
+}
+
+
+.orangeText {
+  color: #FFB742;
+}
+
+.orangeName {
+  color: #FFB742;
+
+}
+
+/* ------------ MEDIA QUERIES ---------------- */
+
+@media (max-width: 480px) {
+
+  #home img, .navBar{
+    display: none;
+  }
+
+  #home a svg {
+    display: block;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+  .home-body {
+    padding: 0 10px !important;
+  }
+
+  .homeCards {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 10px;
+  }
+
+  .avatar {
+    width: 75% !important;
+  }
+
+  #home .navButton {
+    margin-top: 5px;
+    margin-left: 200px;
+  }
+
+  .right-arrow {
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+
+  #about {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #about div {
+    flex-direction: column;
+  }
+
+  .about-body {
+    width: 100%;
+  }
+
+  .about-info {
+    padding: 0 10px !important;
+  }
+
+  #skills {
+    padding-top: 80px;
+  }
+
+  .skills-body {
+    padding: 0 !important;
+    margin: 0 !important;
+    flex-direction: column;
+  }
+
+  .skills-text, .skills-text-two {
+    width: 100%;
+  }
+
+  .skills-text #hire {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  #portfolio {
+    padding-top: 50px;
+  }
+
+  .project-image {
+    width: 300px;
+  }
+
+  .little {
+    width: 130px !important;
+  }
+
+  #skillRow {
+    margin: 0 !important;
+    padding: 0 10px !important;
+  }
+
+  .skillIcon {
+    margin: 3px !important;
+  }
+
+  .carou-item {
+    flex-direction: column;
+  }
+
+  .carousel-item {
+    margin: 0 auto;
+    height: max-content;
+  }
+
+  .portfolio-header {
+    display: block !important;
+  }
+
+  .portfolio-header h1 {
+    text-align: left !important;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .skills-text, .skills-text-two {
+    width: 100% !important;
+  }
+
+}
+
+@media (max-width: 810px) {
+
+  .skills-text, .skills-text-two {
+    width: 100%;
+  }
+
+  .skills-body, #skillRow {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .displayPicture {
+    width: 100% !important;
+  }
+
+  .about-picture {
+    padding: 0 !important;
+  }
+
+  .about-info {
+    padding: 0 !important;
+  }
+
+  .project-image {
+    width: 300px !important;
+  }
+
+  
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
