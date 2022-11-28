@@ -7,7 +7,7 @@ function HireButton(props){
     };
 
     if (props.text === "Hire Me"){
-        return <div id='hire'>
+        return <div id='hire' >
                 <a href={cv} target="_blank" rel="noopener noreferrer">
                 <button className="navButton" style={buttonStyle}>
                     <p>{props.text}</p>

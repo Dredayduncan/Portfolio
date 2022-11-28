@@ -10,13 +10,13 @@ import displayPicture from "../assets/images/andrewtrans.png";
  * @returns A section with an id of about.
  */
 function About(){
-    return <section id="about" className='ps-5'>
+    return <section id="about" className='ps-5' data-scroll-section>
         
             <div className="d-flex justify-content-center align-items-center h-100">
 
                 
                 <div className='about-picture'>
-                    <img className='displayPicture' src={displayPicture} alt="image"/>
+                    <img className='displayPicture' src={displayPicture} alt=""/>
                 </div>
 
                 

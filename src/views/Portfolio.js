@@ -10,7 +10,7 @@ import WebAppView from '../components/webAppView';
 
 function Portfolio(){
     
-    return <section id="portfolio">
+    return <section id="portfolio" data-scroll-section>
 
         <div className='container pt-3'>
 

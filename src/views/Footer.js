@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Footer(){
-    return <footer id="footer">
+    return <footer id="footer" data-scroll-section>
         <div id="foot">
             <div className="footer-top">
                 <div className="container">

@@ -17,7 +17,7 @@ import django from "../assets/images/django.png";
 
 function Skills(){
 
-    return <section id="skills">
+    return <section id="skills" data-scroll-section>
         <div className="container">
 
             <div className="skills-body d-flex align-items-center h-100">
