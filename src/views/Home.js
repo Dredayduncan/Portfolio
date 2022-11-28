@@ -14,12 +14,12 @@ import {faHome, faAddressCard, faBriefcase, faEnvelope, faToolbox} from '@fortaw
  * @returns A section with a title, a paragraph, an image, and a div with three HomeCards.
  */
 function Home(){
-    return  <section className='homeSection' data-scroll-section>
+    return  <section id='homeSection' className='homeSection' data-scroll-section>
 
         {/* mobile menu */}
-        <div className='d-block d-md-none'>
+        <div className='d-block d-md-none pb-4'>
                 <nav className="navbar navbar-dark bg-dark">
-                    <div className="container-fluid">
+                    <div className="mobileNav container-fluid position-fixed pt-3 ps-0 bg-dark">
                         <img src={logo} alt="" height="50"/>
                         <button className="navbar-toggler shadow-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                             <span className="navbar-toggler-icon"></span>
@@ -32,31 +32,31 @@ function Home(){
                         <div className="offcanvas-body">
                             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li className="nav-item">
-                                    <a className="active" href="#home">
+                                    <a className="active" id='mobileHomeLink'>
                                         <span><FontAwesomeIcon icon={faHome} /> </span>
                                         Home
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#about">
+                                    <a id='mobileAboutLink'>
                                         <span><FontAwesomeIcon icon={faAddressCard} /> </span>
                                         About
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#skills">
+                                    <a id='mobileSkillsLink'>
                                         <span><FontAwesomeIcon icon={faToolbox} /> </span>
                                         Skills
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#portfolio">
+                                    <a id='mobilePortfolioLink'>
                                         <span><FontAwesomeIcon icon={faBriefcase} /> </span>
                                         Portfolio
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#footer">
+                                    <a id='mobileFooterLink'>
                                         <span><FontAwesomeIcon icon={faEnvelope} /> </span>
                                         Contact
                                     </a>
@@ -74,11 +74,11 @@ function Home(){
                 <img src={logo} alt="" height="80"/>
             </div>
             <div className="navBar">
-                <a className="active" href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#footer">Contact</a>
+                <a className="active" id='homeLink'>Home</a>
+                <a id='aboutLink'>About</a>
+                <a id='skillsLink'>Skills</a>
+                <a id='portfolioLink'>Portfolio</a>
+                <a id='footerLink'>Contact</a>
             </div>
             <HireButton text="Hire Me" width="100px" />
         </div>
@@ -86,7 +86,7 @@ function Home(){
         {/* home body  */}
 
         <div className='home-body'>
-            <h5>
+            <h5 data-scroll data-scroll-speed="1" data-scroll-class="appear" data-scroll-repeat="true">
                 Hey There, I Am 
                 <span className="orangeText">
                     <u> Andrew Duncan</u>
@@ -102,10 +102,10 @@ function Home(){
 
             <img src={avatar} className="avatar" alt=""/>
             
-            <div className="homeCards row justify-content-evenly">
-                <HomeCards icon={experienceBadge} value="4" label="Years Of Experience"/>
-                <HomeCards icon={completedProjectsBadge} value="28" label="Completed Projects"/>
-                <HomeCards icon={happyClient} value="4" label="Satisfied Clients"/>
+            <div className="homeCards row justify-content-evenly" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1" data-scroll-repeat="true">
+                <HomeCards icon={experienceBadge} value="2" label="Years Of Experience"/>
+                <HomeCards icon={completedProjectsBadge} value="8" label="Completed Projects"/>
+                <HomeCards icon={happyClient} value="7" label="Satisfied Clients"/>
             </div>
 
         </div>

@@ -21,7 +21,7 @@ function Skills(){
         <div className="container">
 
             <div className="skills-body d-flex align-items-center h-100">
-                <div className='skills-text'>
+                <div className='skills-text' data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
                     <LittleLabel text="MY SKILLS"/>
                     <h1>What My Programming Skills Include?</h1>
                     <p className='skills-text-two mb-0'>
@@ -41,22 +41,22 @@ function Skills(){
                 </div>
      
                 <div id="skillRow" className='d-flex'>
-                    <div>
+                    <div data-scroll data-scroll-speed="1">
                         <SkillIcon icon={flutter}/>
                         <SkillIcon icon={java}/>
                         <SkillIcon icon={sql}/>
                     </div>
-                    <div>
+                    <div data-scroll data-scroll-speed="-1">
                         <SkillIcon icon={python}/>
                         <SkillIcon icon={html}/>
                         <SkillIcon icon={github}/>
                     </div>
-                    <div>
+                    <div data-scroll data-scroll-speed="1">
                         <SkillIcon icon={django}/>
                         <SkillIcon icon={css}/>
                         <SkillIcon icon={figma}/>
                     </div> 
-                    <div>
+                    <div data-scroll data-scroll-speed="-1">
                         <SkillIcon icon={php}/>
                         <SkillIcon icon={javascript}/>
                     </div>               

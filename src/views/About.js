@@ -15,13 +15,13 @@ function About(){
             <div className="d-flex justify-content-center align-items-center h-100">
 
                 
-                <div className='about-picture'>
+                <div className='about-picture' data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
                     <img className='displayPicture' src={displayPicture} alt=""/>
                 </div>
 
                 
                 
-                <div className='about-info'>
+                <div className='about-info' data-scroll data-scroll-speed="1" data-scroll-direction="horizontal">
                     <LittleLabel text="WHO I AM"/>
                     
                     

@@ -2,14 +2,12 @@ import React from 'react';
 
 function Footer(){
     return <footer id="footer" data-scroll-section>
-        <div id="foot">
-            <div className="footer-top">
-                <div className="container">
-                    <div className="row justify-content-center">
+        <div id="foot" className="container">
+            <div className="row justify-content-center">
                         <div className="col-md-3 footer-contact">
                             <p className="name">Andrew Duncan.</p>
                             <p>
-                                Software Engineer & Back-End Developer
+                                Software Engineer & Mobile Application Developer
                             </p>
                         </div>
 
@@ -41,8 +39,6 @@ function Footer(){
                         </div>
 
                     </div>
-                </div>
-            </div>
 
         </div>  
 
