@@ -8,7 +8,7 @@ import mySafeCampus from "../assets/images/mySafeCampus.png";
 import MobileAppView from '../components/mobileAppView';
 import WebAppView from '../components/webAppView';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 // Import Swiper styles
 import 'swiper/swiper.min.css';
 import 'swiper/modules/pagination/pagination.min.css';
@@ -27,47 +27,16 @@ function Portfolio(){
                 <h1 data-scroll data-scroll-speed="1" data-scroll-class="appear" data-scroll-repeat="true" className='pt-4'>Some of my projects</h1>
             </div>
 
-            {/* <div id="carouselExampleIndicators" className="pt-2 carousel slide" data-bs-ride="carousel" data-scroll data-scroll-speed="1" data-scroll-class="appear" data-scroll-repeat="true">
-                <div className="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-                <div className="carousel-inner rounded">
-                    <div className="carousel-item active" style={{"background": "#1b542f"}} data-bs-interval="2000">
-                        
-                    </div>
-                    <div className="carousel-item" style={{"background": "#8f2e2e"}} data-bs-interval="2000">
-                       
-                    </div>
-                    <div className="carousel-item" style={{"background": "#969796"}} data-bs-interval="2000">
-                        <WebAppView 
-                            image={asvie} 
-                            name="Asvie" 
-                            description=" Asvie, a virtual integrated voice assistant, is based on Edward Jarvis' famous Artificial Intelligence Assistant, Jarvis, from the Marvel universe. 
-                            The main goal of this project is to create a Jarvis that is compatible with Ashesi students. It is a tool for keeping students up to date on events, academic assignments, 
-                            and aid with research. With verbal cues in the form of requests, students are able to retrieve their grades, upcoming assignments, lectures with the times and locations they occur at, 
-                            read their emails and make internet searches." 
-                        />
-        
-                    </div>
-                    
-                    <div className="carousel-item" style={{"background": "#ac3e46"}} data-bs-interval="2000">
-                       
-                    </div>
-                </div>
-            </div> */}
-
         </div>
 
         <div className='container' data-scroll data-scroll-speed="1" data-scroll-class="appear" data-scroll-repeat="true">
             <Swiper
             // install Swiper modules
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             // spaceBetween={50}
             slidesPerView={1}
-            navigation
+            navigation={true}
+            autoplay={{ delay: 2500, disableOnInteraction: false }}
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             onSlideChange={() => console.log('slide change')}
