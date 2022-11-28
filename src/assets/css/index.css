@@ -266,7 +266,6 @@ section {
 #footer {
   background: #1C1C1C;
   padding: 0;
-  position: relative;
   height: max-content;
   overflow-y: scroll;
 }

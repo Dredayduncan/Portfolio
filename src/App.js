@@ -15,6 +15,11 @@ function App() {
       smoothMobile: true
     });
 
+    // update the height of the locomotive scroll with the full height of the container
+    new ResizeObserver(() => scroll.update()).observe(
+      document.querySelector("[data-scroll-container]")
+    );
+
     // section targets
     const homeTarget = document.querySelector('#homeSection');
     const aboutTarget = document.querySelector('#about');

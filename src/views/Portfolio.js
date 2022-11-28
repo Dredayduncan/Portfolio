@@ -19,7 +19,7 @@ function Portfolio(){
                 <h1 data-scroll data-scroll-speed="1" data-scroll-class="appear" data-scroll-repeat="true" className='pt-4'>Some of my projects</h1>
             </div>
 
-            <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-scroll data-scroll-speed="1" data-scroll-class="appear" data-scroll-repeat="true">
+            <div id="carouselExampleIndicators" className="pt-2 carousel slide" data-bs-ride="carousel" data-scroll data-scroll-speed="1" data-scroll-class="appear" data-scroll-repeat="true">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -77,7 +77,7 @@ function Portfolio(){
                
         
           
-        <div className="d-flex justify-content-center pt-5">
+        <div className="d-flex justify-content-center pt-5 pb-5">
             <HireButton width="300px" text="Check out my GitHub for more projects" />
         </div>
 
